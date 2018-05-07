@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/et1"
+        android:hint="Enter Gender"
+        android:background="@drawable/et_bg"
+        android:layout_margin="5dp"
+        android:paddingLeft="5dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/et2"
+        android:hint="Enter Mobile No"
+        android:background="@drawable/et_bg"
+        android:layout_margin="5dp"
+        android:paddingLeft="5dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/et3"
+        android:hint="Enter Name"
+        android:background="@drawable/et_bg"
+        android:layout_margin="5dp"
+        android:paddingLeft="5dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/et4"
+        android:hint="Enter Address"
+        android:background="@drawable/et_bg"
+        android:layout_margin="5dp"
+        android:paddingLeft="5dp"/>
+
+    <Button
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="SUBMIT"
+        android:onClick="submit"
+        android:background="@drawable/mybg"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:fontFamily="cursive"/>
+
+</LinearLayout>
