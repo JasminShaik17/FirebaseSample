@@ -33,7 +33,7 @@ public class DashboardActivity extends AppCompatActivity {
         getSupportActionBar().setBackgroundDrawable(
                 getResources().getDrawable(R.drawable.mybg)
         );
-        
+
         mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
