@@ -1,6 +1,7 @@
 package cubex.mahesh.firebasesample;
 
 import android.annotation.TargetApi;
+import android.graphics.Color;
 import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -27,8 +28,12 @@ public class DashboardActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setStatusBarColor(Color.RED);
         setContentView(R.layout.activity_dashboard);
-
+        getSupportActionBar().setBackgroundDrawable(
+                getResources().getDrawable(R.drawable.mybg)
+        );
+        
         mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
